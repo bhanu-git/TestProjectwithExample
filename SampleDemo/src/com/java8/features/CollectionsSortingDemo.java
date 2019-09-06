@@ -11,6 +11,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.java8.util.Employee;
+
 public class CollectionsSortingDemo {
 
 	public static void main(String[] args) {

@@ -3,5 +3,5 @@
 3. strat eclips - 
 4. open git repository prospective - 
 5. give the repository location and credentials to connect Git repo
-6. goto created project in eclipse - right click on project - goto source and select share project
-7. click project- goto source - click commit - drag the select files into saved changes- commit
+6. goto created project in eclipse - right click on project - goto team and select share project
+7. click project- goto team - click commit - drag the select files into saved changes- commit
