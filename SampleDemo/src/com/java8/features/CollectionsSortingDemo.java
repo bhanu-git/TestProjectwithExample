@@ -19,7 +19,7 @@ public class CollectionsSortingDemo {
 		// TODO Auto-generated method stub
 
 		
-		List<Integer> l = new ArrayList();
+		List<Integer> l = new ArrayList<>();
 		l.add(2);
 		l.add(3);
 		l.add(1);

@@ -1,0 +1,44 @@
+Java8 features:
+==============
+
+1. default method implementation in interface
+2. static method implementation in interface
+3. Lamda Expressions using Functional interfaces
+4. Predefined some functional interfaces
+	i) Predicate<T t> 	- Accept the one argument as input and returns the boolean.
+				 		- it will use for conditional check 
+				 		- public boolean test(T t)
+				 		- p1.or(p2);  p1.and(p2);  p1.negate(p2);
+	ii)Function<T,R> 	- Accept the one argument and returns the any type of result.
+					 	- accept the some input and perform some business log and returns the result.
+					 	-public R apply(T t)
+					 	- f1.andThen(f2).apply(i);
+					 	- f1.compose(f2).apply(i);
+	iii)Consumer<T t)	- Accept the one argument and does not return any value.
+					  	- Accept the input and perform some required action and wont return any value.
+					  	- public void accept(T t)
+					  	- c1.andThen(c2).accept(i);
+	iv)Supplier<R>	  	- it wont accept any value . it always return the required objects
+				   	  	- R get()
+	V)BiPredicate<T t1,T t2) - it accept the two arguments and it is exactly  same as Predicate.
+							- Boolean test(T t1, T t2)
+	Vi)BiFunction<T t1,T t2, R> - it is same as Function and only diff is it will accept the two argements.
+							- public R apply(T1 t1, T2 t2); 
+	vii)BiConsumer<T t1, T t2) - it is same as Consumer. it will accept two args.
+							- public void accept(T t1, T t2);
+							
+5. Primitive type functional interfaces:
+ ======================================
+Ex: 	Predicate<Integer> p1 = i->i%2==0;
+		System.out.println("Predicate 1 result "+p1.test(10));
+		
+		if we are using to check primitive type of values for boolean check,
+		internally autoboxing and unboxing are happening for multiple times. int -->Integer -->int.
+To overcome these problems premitive type are introduced.
+Solution: (here it accepts only int values so we can use directly intPredicate)
+		IntPredicate p1 = i->i%2==0;
+		System.out.println("Predicate 1 result "+p1.test(10));
+		
+	i)IntPredicate, DoublePredicate,LongPredicate	
+	ii)IntFucntion,DoubleFunction, LongFunction.
+	iii)IntConsumer,DoubleConsumer,LongConsumer	
