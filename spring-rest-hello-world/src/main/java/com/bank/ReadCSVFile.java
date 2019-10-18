@@ -5,19 +5,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Service;
-@Service
+import org.springframework.stereotype.Component;
+
+@Component
 public class ReadCSVFile {
 	public void getCSVData(Map<String,Record> records, List<Record> failRec) {
 		
-		
-		String pathToCsv = "records.csv";
 		String row = "";
 		BufferedReader csvReader = null;
 		try {
