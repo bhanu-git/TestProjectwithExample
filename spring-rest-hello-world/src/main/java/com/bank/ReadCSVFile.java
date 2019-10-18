@@ -27,7 +27,6 @@ public class ReadCSVFile {
 				String[] data = row.split(",");
 				Record record = new Record();
 				if (!"reference".equalsIgnoreCase(data[0])) {
-					System.out.println(data[0] + "\t" + data[5]);
 					
 						record.setReference(data[0]);
 						record.setAccountNumber(data[1]);
