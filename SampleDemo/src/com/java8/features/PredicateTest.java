@@ -2,6 +2,7 @@ package com.java8.features;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.IntPredicate;
 import java.util.function.Predicate;
 
 import com.java8.util.Employee;
@@ -42,6 +43,9 @@ public class PredicateTest {
 		System.out.println("Predicate negate Predicate result "+p1.negate().test(10));
 		System.out.println("Predicate negate Predicate result "+p2.negate().test(10));
 		System.out.println();
+		
+		IntPredicate ip1 = i->i/2==0;
+		System.out.println(ip1.test(10));//
 		
 		List<Employee> li = new ArrayList<>();
 		li.add(new Employee(1,"bhanu",28));

@@ -42,3 +42,5 @@ Solution: (here it accepts only int values so we can use directly intPredicate)
 	i)IntPredicate, DoublePredicate,LongPredicate	
 	ii)IntFucntion,DoubleFunction, LongFunction.
 	iii)IntConsumer,DoubleConsumer,LongConsumer	
+
+6. Method and constructor reference.

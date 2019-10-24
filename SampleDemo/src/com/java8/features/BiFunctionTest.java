@@ -17,7 +17,7 @@ public class BiFunctionTest {
 		li.add(bif.apply(2, "Prakash"));
 		li.add(bif.apply(3, "kolli"));
 		
-		//retrive employee details
+		//Retrieve employee details
 		li.forEach(System.out::println);
 		
 		li.forEach(e->{

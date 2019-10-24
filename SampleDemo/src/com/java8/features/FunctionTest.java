@@ -3,6 +3,7 @@ package com.java8.features;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.IntFunction;
 import java.util.function.Predicate;
 
 import com.java8.util.Student;
@@ -27,6 +28,9 @@ public class FunctionTest {
 		
 		Function<String, String> f2 = s->s.toUpperCase();
 		System.out.println(f2.apply("bhanu"));
+		
+		IntFunction if1 = i->i*i;
+		System.out.println(if1.apply(10));
 		
 		//Customize Function def.
 		

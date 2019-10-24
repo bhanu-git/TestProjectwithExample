@@ -81,7 +81,7 @@ public class CollectionsSortingDemo {
 		
 		 LinkedHashMap<Employee, Integer> collect = map.entrySet().stream()
 	                //Map<Employee, Integer>
-	                .collect(Collectors.toMap(k -> (Employee) k.getKey(), e5 -> (Integer) e5.getValue()))
+	                .collect(Collectors.toMap(k -> (Employee) k.getKey(), v -> (Integer) v.getValue()))
 	                .entrySet()
 	                .stream()
 	                .sorted(c1)
